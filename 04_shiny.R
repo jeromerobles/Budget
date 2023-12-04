@@ -4,12 +4,13 @@ library(shiny)
 library(plotly)
 library(RCurl)
 
-url<-"robles_desktop/home_shared/Jerome/"
-list.files(url)
-file.copy(paste(url,'!readme.txt',sep=''),tempfile())
+# url<-"robles_desktop/home_shared/Jerome/"
+# list.files(url)
+# file.copy(paste(url,'!readme.txt',sep=''),tempfile())
+# 
+# graph_data <- 'ftp://robles_desktop'
 
-graph_data <- 'ftp://robles_desktop'
-
+message(list.files('./'))
 # Define UI
 ui <- fluidPage(
   titlePanel("Interactive Plotly App"),
